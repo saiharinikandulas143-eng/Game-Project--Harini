@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Starfall Rush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Starfall Rush</h1>
+    <p class="subtitle">Catch stars, dodge meteors, beat the clock.</p>
+
+    <div id="game-wrapper">
+        <canvas id="gameCanvas" width="800" height="480"></canvas>
+
+        <div id="hud">
+            <span id="scoreDisplay">Score: 0</span>
+            <span id="livesDisplay">Lives: 3</span>
+            <span id="timeDisplay">Time: 60</span>
+            <span id="streakDisplay">Streak x1</span>
+        </div>
+
+        <div id="controls">
+            <button id="startBtn">Start Game</button>
+            <button id="restartBtn">Restart</button>
+
+            <label>
+                Difficulty:
+                <select id="difficultySelect">
+                    <option value="easy">Easy 🌙</option>
+                    <option value="normal" selected>Normal ⭐</option>
+                    <option value="hard">Hard ☄</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <div id="instructions">
+        <h2>How to Play</h2>
+        <ul>
+            <li><b>Move:</b> Left/Right Arrow or A/D.</li>
+            <li><b>Catch</b> blue stars for points.</li>
+            <li><b>Avoid</b> red meteors—they reduce lives.</li>
+            <li><b>Power-ups:</b> green = slow motion, gold = double points.</li>
+            <li>Round lasts <b>60 seconds</b> (depends on difficulty).</li>
+        </ul>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(circle at top, #1a2a6c, #000);
+    color: #f5f5f5;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 6px;
+    font-size: 26px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#gameCanvas {
+    border-radius: 14px;
+    border: 2px solid #5edfff;
+    background: linear-gradient(#020617, #020617 70%, #111827);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+#hud {
+    display: flex;
+    gap: 16px;
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+#hud span {
+    min-width: 90px;
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button,
+select {
+    border-radius: 999px;
+    padding: 8px 16px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(59, 130, 246, 0.6);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(59, 130, 246, 0.4);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+select {
+    background: #0f172a;
+    color: #e5e7eb;
+    border: 1px solid #4b5563;
+}
+
+#instructions {
+    max-width: 800px;
+    margin-top: 14px;
+    font-size: 14px;
+    background: rgba(15, 23, 42, 0.9);
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+#instructions ul {
+    margin-left: 18px;
+    margin-top: 4px;
+}
+
+#instructions li {
+    margin-bottom: 2px;
+}
